@@ -1,0 +1,32 @@
+
+
+<% if(getAll.length > 0){%>
+
+    <div class="container_table">
+        <h2>Historial de productos</h2>
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <tr style="color:rgb(255, 106, 0) ;">
+                    <th>title</th>
+                    <th>price</th>
+                    <th>thombnail</th>
+                </tr>
+                <% for(const prod of getAll){%>
+                    <tr>
+                        <td><%=prod.title%></td>
+                        <td><%=prod.price%></td>
+                        <td><img src="<%=prod.thumbnail%>" alt="" class="img"></td>
+
+                        
+                    </tr>
+                <%}%>
+            </table>
+        </div>
+        <a class=""  href="/">Cargar producto</a>
+    </div>
+<%}else{%>
+    <h3>No hay productos </h3>
+<%}%>
+
+
+

@@ -1,0 +1,52 @@
+
+
+
+<form action="/productos" method="post" name="productos" class="form_container" onsubmit="return addProduct(this)">
+    <h1>Ingresar datos</h1>
+    <br>
+
+    <div class="div_datos">
+        <label for="title" class="label">Title</label>
+        <input type="text" placeholder="Titulo del producto" name="producto" id="producto" class="">
+
+    </div>
+    
+    <div class="div_datos">
+        <label for="price" class="label">Precio</label>
+        <input type="number" placeholder="Precio del producto"  name="precio" id="precio">
+        
+    </div>
+
+    <div class="div_datos">
+        <label for="thumbnail" class="label">Imagen</label>
+        <input type="text" placeholder="link de la imagen" id="thombnail" name="thombnail" >
+        
+    </div>
+
+    <button type="submit" class="button">Enviar</button>
+
+    <a class=""  href="/productos">Ver productos</a>
+
+    <div id="product">
+        
+    </div>
+</form>
+
+<div>
+    <h1>primer web socket</h1>
+
+    <form onsubmit="return addMessage(this)">
+
+        <input type="email" name="nombre" id="nombre" placeholder=" ingresa su Email">
+        <input type="text" name="mensaje" id="mensaje" placeholder="mensaje">
+        <button>enviar</button>
+
+    </form>
+    
+
+    <div id="messages" class="div_table">
+        
+    </div>
+  
+</div>
+
